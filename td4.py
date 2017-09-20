@@ -1,9 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
-"""
-# Definition de soup
-UNI = requests.get("https://stackoverflow.com/questions/tagged/beautifulsoup")
-soup = BeautifulSoup(UNI.text, "lxml")
+
 
 
 # selection par balise 
@@ -21,6 +18,7 @@ soup = BeautifulSoup(UNI.text, "lxml")
 
 # Exercice 2 : 
 
+UNI = requests.get("http://www.univ-orleans.fr")
 soup = BeautifulSoup(UNI.text, "lxml")
 print(soup.h1)
 print(soup.find_all('div'))
@@ -31,6 +29,8 @@ print(soup.find('div', class_='composite-zone'))
 
 # Exercice 3 :
 
+UNI = requests.get("https://stackoverflow.com/questions/tagged/beautifulsoup")
+soup = BeautifulSoup(UNI.text, "lxml")
 listQuestion=[]
 listCountPost=[]
 listAnswer=[]
@@ -50,8 +50,7 @@ with open('data.csv','w') as file :
     for i in range(len(listAnswer)):
         file.write('"'+listQuestion[i]+'"; "'+listCountPost[i]+'"; "'+listAnswer[i]+'";')
         file.write('\n') 
-
-        
+     
 # Exercice 4 :
 
 data = {"submit-form": "", "catalog": "catalogue-2015-2016", "degree": "DP"}
@@ -64,7 +63,7 @@ for node in soup.find_all('li', class_='hit'):
         formations.append(''.join(formation.findAll(text=True)))
 print(formations)
 
-"""
+
 
 
 # Exercice 5 : 
@@ -85,4 +84,3 @@ with open('vocabulary.txt') as f:
 with open('definitions.txt','w') as d:
     for mot in lines:
         d.write(get_definition(mot)[0])
-
