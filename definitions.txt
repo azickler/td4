@@ -1,0 +1,17 @@
+diner
+     n 1: a person eating a meal (especially in a restaurant)
+     2: a passenger car where food is served in transit [syn: dining
+        car, dining compartment, buffet car]
+     3: a restaurant that resembles a dining car
+breakfast
+     n : the first meal of the day (usually in the morning)
+     v 1: eat an early morning meal; "We breakfast at seven"
+     2: provide breakfast for
+lunch
+     n : a midday meal [syn: luncheon, tiffin, dejeuner]
+     v 1: take the midday meal; "At what time are you lunching?"
+     2: provide a midday meal for; "She lunched us well"
+bicycle
+     n : a wheeled vehicle that has two wheels and is moved by foot
+         pedals [syn: bike, wheel, cycle]
+     v : ride a bicycle [syn: cycle, bike, pedal, wheel]
